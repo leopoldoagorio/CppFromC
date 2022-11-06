@@ -1,3 +1,9 @@
+/* In this class we learned to redefine operators for a variable type
+++ operator is redefined for oparting with the days type
+operator << that is already redefined in std to print, is further
+redefined for the days datatype.
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -27,5 +33,5 @@ ostream& operator<< (ostream& out, const days& d){
 int main(){
     days d = MON, e;
     e = ++d; //calling operator++(days)
-    cout << d << 't' << e << endl; //using operator<<
+    cout << d << '\t' << e << endl; //using operator<<, should print MON TUE
 }
